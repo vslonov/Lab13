@@ -1,0 +1,16 @@
+# Lab13
+
+CUNYFirst Mobile Bug Report
+
+Summary: When using CUNYFirst on mobile devices, there seems to be an issue regarding zooming on while on the platform. Zooming in should simply make information on the page more viewable, but whenever a page is zoomed in on, a certain portion of the screen is cut off, typically from the bottom to about the middle of the screen. This can be fixed by having the user zoom out to the original page size, but this isn’t a 100% fix and sometimes requires zooming in and out to the original size until the full page view is restored. This makes it difficult for students without access to a computer to use CUNYFirst for certain vital purposes, such as selecting classes or viewing financial aid information. Everything else regarded zooming in works, such as the text being expanded and not losing quality, but having half of the screen be inaccessible seemingly defeats the purpose of the zoom function. This was replicated on an iPhone 7 and iPhone 10 in the Safari application.
+
+Steps to reproduce: First, open CUNYFirst on a mobile device. Then, open any page and note the information being displayed, without any white spaces obstructing it. Then, pinch in on the device screen to zoom in and note a section of the screen being completely blank, even while scrolling across the page.
+
+Expected results: All information should be displayed when zooming in without anything covering information on the website, but should simply appear larger as a result of zooming in.
+
+Actual results: A blank area seemingly matching the dimensions of the device being used appears and covers a portion of the website.
+Proof: Below are two pictures, the left being a page on CUNYFirst without being zoomed in, and the left an example of the white area that covers a certain part of the screen after being zoomed in. The “class keyword” text and accompanying text box, as well as all information below that, is cut off, even though there is still plenty of screen space available.
+
+Proposed solution: There are a few ways of going about this. The engineer could look at the code for the website and see if the zooming in code is not up to par. It seems as if the page stores the initial location of links and text on the unzoomed page and doesn’t know where to put them after being zoomed in. The issue persists while scrolling across the page after being zoomed in, so it's also possible the website is storing the initial size of the screen and using that to measure how much information should be displayed, without properly adjusting for the new zoomed in screen size. If this is the issue, a simple solution could be updating the stored display size of the screen to match the new one after being zoomed in. The issue appears to be front end related so there should be some indication of why this is occurring in the code of the frontend of the website.
+Severity: Minor. Students are still able to use all primary functions of CUNYFirst, but this is an inconvenience that should be able to be fixed very quickly. An update like this would serve as a very simple but beneficial quality of life change for students in situations where displaying all information at once is critical, such as trying to enroll in classes before all seats are filled up.
+ 
