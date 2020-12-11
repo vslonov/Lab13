@@ -2,6 +2,8 @@
 
 CUNYFirst Mobile Bug Report
 
+Hello Professor, for some reason I was unable to sign in to my Teams account on my PC so I couldn't upload the proper doc file, I included it in this repository but also copy and pasted it here as an alternative. I included two pictures, one of the working website and one where the page is bugged, along with the uploaded files. I was still signed in on Teams on my phone so I could submit this repository there. Sorry for any potential inconvenience. 
+
 Summary: When using CUNYFirst on mobile devices, there seems to be an issue regarding zooming on while on the platform. Zooming in should simply make information on the page more viewable, but whenever a page is zoomed in on, a certain portion of the screen is cut off, typically from the bottom to about the middle of the screen. This can be fixed by having the user zoom out to the original page size, but this isn’t a 100% fix and sometimes requires zooming in and out to the original size until the full page view is restored. This makes it difficult for students without access to a computer to use CUNYFirst for certain vital purposes, such as selecting classes or viewing financial aid information. Everything else regarded zooming in works, such as the text being expanded and not losing quality, but having half of the screen be inaccessible seemingly defeats the purpose of the zoom function. This was replicated on an iPhone 7 and iPhone 10 in the Safari application.
 
 Steps to reproduce: First, open CUNYFirst on a mobile device. Then, open any page and note the information being displayed, without any white spaces obstructing it. Then, pinch in on the device screen to zoom in and note a section of the screen being completely blank, even while scrolling across the page.
